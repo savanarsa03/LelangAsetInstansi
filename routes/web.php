@@ -15,6 +15,8 @@ use App\Http\Controllers\PanduanController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TambahLelangController;
 use App\Http\Controllers\TambahsewaController;
+use App\Http\Controllers\DashboardPesertaController;
+use App\Http\Controllers\DashboardSewaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,6 +43,10 @@ Route::get('/kendaraan', [App\Http\Controllers\KendaraanController::class, 'inde
 // button more
 Route::get('/moreelektronik', [App\Http\Controllers\MoreelektronikController::class, 'index'])->name('moreelektronik');
 Route::get('/morebangunan', [App\Http\Controllers\MorebangunanController::class, 'index'])->name('morebangunan');
+Route::get('/morekendaraan', [App\Http\Controllers\MorekendaraanController::class, 'index'])->name('morekendaraan');
+Route::get('/CCV', [App\Http\Controllers\CCVController::class, 'index'])->name('CCV');
+Route::get('/elf', [App\Http\Controllers\ElfController::class, 'index'])->name('elf');
+Route::get('/pasar', [App\Http\Controllers\PasarController::class, 'index'])->name('pasar');
 
 // button ikuti lelang
 Route::get('/konfirmel', [App\Http\Controllers\KonfirmasiElektronikController::class, 'index'])->name('konfirmel');
@@ -70,8 +76,10 @@ Route::prefix('admin/lelang')->group(function () {
 
 //dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-// Route::get('/tambah-lelang', [TambahLelangController::class, 'index'])->name('tambah-lelang');
+Route::get('/tambah-lelang', [TambahLelangController::class, 'index'])->name('tambah-lelang');
 Route::get('/tambah-sewa', [TambahsewaController::class, 'index'])->name('tambah-sewa');
-
-
 Route::resource('/dashboard/tambah-lelang', TambahLelangController::class);
+Route::resource('/dashboard/peserta', DashboardPesertaController::class);
+Route::resource('/dashboard/tambah-sewa', DashboardSewaController::class);
+Route::get('/tambah-sewa', [DashboardSewaController::class, 'index'])->name('tambah-sewa');
+Route::post('/tambah-sewa', [DashboardSewaController::class,'store'])->name('sewa.store');

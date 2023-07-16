@@ -125,22 +125,14 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ url('/kendaraan')}}">Kendaraan</a>
           <a class="dropdown-item" href="{{ url('/elektronik')}}">Elektronik</a>
-              <div class="dropdown dropright">
-                <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdownMenuLink" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                Bangunan
-                </a>
-                <div class="dropdown-menu" aria-labelledby="nestedDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ url('/sewabangunan')}}">Sewa</a>
-                  <a class="dropdown-item" href="{{ url('/bangunan')}}">Lelang</a>
-                </div>
-              </div>
+          <a class="dropdown-item" href="{{ url('/bangunan')}}">Bangunan</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">Panduan</a>
+        <a class="nav-link active" href="{{ url('/panduan')}}">Panduan</a>
       </li>
     </ul>
-    
+  </div>
     <span class="navbar-text mr-auto">
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -164,40 +156,49 @@
         </div>
     </div>
     
+    <!-- breadcrumb -->
+<nav aria-label="breadcrumb" style="font-size: 14px;">
+  <ol class="breadcrumb bg-transparent" >
+    <li class="breadcrumb-item"><a href="-">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+    <li class="breadcrumb-item active" aria-current="page">kendaraan</li>
+  </ol>
+</nav>
+
 <!-- pembuatan menu lelang -->
 <center>
 <div class="card" style="width: 13rem;">
   <img src="{{ asset ('img/kendaraan') }}/brio.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Laptop</h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <h5 class="card-title">Brio 2022</h5>
+    <p class="card-text">DIjual Murah</p>
+    <a href="{{ url('/morekendaraan')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 
-<div class="card" style="width: 13rem;">
+<div class="card" style="width: 13rem; ">
   <img src="{{ asset ('img/kendaraan') }}/elf.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">CCTV </h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <h5 class="card-title">Elf 2010</h5>
+    <p class="card-text">Kendaraaan milik kantor</p>
+    <a href="{{ url('/elf')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 
 <div class="card" style="width: 13rem;">
   <img src="{{ asset ('img/kendaraan') }}/fortuner.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Iphone 12</h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <h5 class="card-title">Fortuner 2012</h5>
+    <p class="card-text">mobil milik perusahaan PT Segerjaya</p>
+    <a href="{{ url('/morekendaraan')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 
 <div class="card" style="width: 13rem;">
   <img src="{{ asset ('img/kendaraan') }}/supra.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Kulkas 1 Pintu</h5>
-    <p class="card-text">murah pol</p>
+    <h5 class="card-title">Supra X</h5>
+    <p class="card-text">Supra kantor</p>
     <a href="#" class="btn btn-primary">More</a>
         </div>
 </div>
@@ -205,18 +206,18 @@
 <div class="card" style="width: 13rem;">
   <img src="{{ asset ('img/kendaraan') }}/tayo.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Hardisk</h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <h5 class="card-title">Minibus</h5>
+    <p class="card-text">Minibus bekas Transjogja</p>
+    <a href="{{ url('/morekendaraan')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 
 <div class="card" style="width: 13rem;">
   <img src="{{ asset ('img/kendaraan') }}/viar.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Iphone 12</h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <h5 class="card-title">Viar</h5>
+    <p class="card-text">Kendaraan angkut barang </p>
+    <a href="{{ url('/morekendaraan')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 

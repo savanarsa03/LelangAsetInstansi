@@ -142,7 +142,7 @@
   }
   .lelang-status {
     font-weight: bold;
-    color: green;
+    color: red;
   }
   .lelang-schedule {
     font-weight: bold;
@@ -194,21 +194,14 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ url('/kendaraan')}}">Kendaraan</a>
           <a class="dropdown-item" href="{{ url('/elektronik')}}">Elektronik</a>
-              <div class="dropdown dropright">
-                <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdownMenuLink" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                Bangunan
-                </a>
-                <div class="dropdown-menu" aria-labelledby="nestedDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ url('/sewabangunan')}}">Sewa</a>
-                  <a class="dropdown-item" href="{{ url('/bangunan')}}">Lelang</a>
-                </div>
-              </div>
+          <a class="dropdown-item" href="{{ url('/bangunan')}}">Bangunan</a>
         </div>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#">Panduan</a>
       </li>
     </ul>
+    
     <span class="navbar-text mr-auto">
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -232,6 +225,15 @@
         </div>
     </div>
     
+      <!-- breadcrumb -->
+<nav aria-label="breadcrumb" style="font-size: 14px;">
+  <ol class="breadcrumb bg-transparent" >
+    <li class="breadcrumb-item"><a href="-">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+    <li class="breadcrumb-item active" aria-current="page">elektronik</li>
+  </ol>
+</nav>
+
  
 <div class="detail-lelang">
   <div class="detail-lelang-image">
@@ -239,13 +241,11 @@
   </div>
   <div class="detail-lelang-info">
     <h2>Laptop Asus Gen3</h2>
-    <div class="lelang-status">Status: Sedang Berlangsung</div>
+    <div class="lelang-status">Status: Sudah Berlangsung</div>
     <p>Pemakaian 3 Bulan, Lecet normal, Baterai masih normal, Keyboard aman, kerusakan di wifi</p>
     <p>Tanggal Lelang: 12 Juli 2023</p>
-    <p>Lokasi: Bantul</p>
-    <p>Jaminan: Rp 1.000.000</p>
+    <p>Open Bid: Rp 1.000.000</p>
     <p class="lelang-schedule">Jadwal Pelaksanaan: 14 Juli 2023, pukul 09:00 - 12:00</p>
-    <a href="{{ url('/konfirmel')}}" class="bid-button">Ikuti Lelang</a>
   </div>
   <a href="https://wa.me/1234567890?text=Halo%2C%20saya%20tertarik%20dengan%20lelang%20ini." target="_blank" class="whatsapp-link">
 WhatsApp

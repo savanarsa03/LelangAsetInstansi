@@ -232,19 +232,27 @@
         </div>
     </div>
     
+     <!-- breadcrumb -->
+<nav aria-label="breadcrumb" style="font-size: 14px;">
+  <ol class="breadcrumb bg-transparent" >
+    <li class="breadcrumb-item"><a href="-">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+    <li class="breadcrumb-item active" aria-current="page">kendaraan</li>
+  </ol>
+</nav>
  
+
 <div class="detail-lelang">
   <div class="detail-lelang-image">
-    <img src="{{ asset ('img') }}/lptp.jpeg" alt="Gambar Lelang">
+    <img src="{{ asset ('img/kendaraan') }}/brio.jpg" alt="Gambar Lelang">
   </div>
   <div class="detail-lelang-info">
-    <h2>Laptop Asus Gen3</h2>
-    <div class="lelang-status">Status: Sedang Berlangsung</div>
-    <p>Pemakaian 3 Bulan, Lecet normal, Baterai masih normal, Keyboard aman, kerusakan di wifi</p>
+    <h2>BRIO Satya</h2>
+    <div class="lelang-status">Status: Akan Berlangsung</div>
+    <p>Pemakaian 3 Bulan, Mesin masih bagus, pemakaian pribaadi</p>
     <p>Tanggal Lelang: 12 Juli 2023</p>
-    <p>Lokasi: Bantul</p>
-    <p>Jaminan: Rp 1.000.000</p>
-    <p class="lelang-schedule">Jadwal Pelaksanaan: 14 Juli 2023, pukul 09:00 - 12:00</p>
+    <p>open Bid: Rp 500.000.000</p>
+    <p class="lelang-schedule">Jadwal Pelaksanaan: 28 Agustus 2023, pukul 09:00 - 12:00</p>
     <a href="{{ url('/konfirmel')}}" class="bid-button">Ikuti Lelang</a>
   </div>
   <a href="https://wa.me/1234567890?text=Halo%2C%20saya%20tertarik%20dengan%20lelang%20ini." target="_blank" class="whatsapp-link">

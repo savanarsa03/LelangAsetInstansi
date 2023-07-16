@@ -78,7 +78,7 @@
                             </a> 
                         </li> 
                         <li class="nav-item"> 
-                            <a class="nav-link {{ Request::is('dashboard/materi*') ? 'active' : '' }}" 
+                            <a class="nav-link {{ Request::is('dashboard/tambah-sewa*') ? 'active' : '' }}" 
                                 href="{{ url('/tambah-sewa')}}"> 
                                 <span data-feather="dollar-sign"></span> 
                                 Tambah Sewa 
@@ -86,8 +86,8 @@
                         </li> 
                         <li class="nav-item"> 
                             <a
-class="nav-link {{ Request::is('dashboard/pesanan*') ? 'active' : '' }}" 
-                                href="/dashboard/pesanan"> 
+class="nav-link {{ Request::is('dashboard/peserta*') ? 'active' : '' }}" 
+                                href="/dashboard/peserta"> 
                                 <span data-feather="book"></span> 
                                 Data Peserta 
                             </a> 

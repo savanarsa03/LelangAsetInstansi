@@ -73,7 +73,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -93,7 +92,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">Panduan</a>
+        <a class="nav-link active" href="{{ url('/panduan')}}">Panduan</a>
       </li>
     </ul>
     
@@ -103,9 +102,9 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>    
             </form>
     </span>
-  </div>
-</nav>
 
+  </div>
+      </nav>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -121,44 +120,35 @@
   </div>
 </div>
 
+  <!-- breadcrumb -->
+  <nav aria-label="breadcrumb" style="font-size: 14px;">
+  <ol class="breadcrumb bg-transparent" >
+    <li class="breadcrumb-item"><a href="-">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Bangunan</li>
+    <li class="breadcrumb-item active" aria-current="page">Lelang</li>
+  </ol>
+</nav>
       <!-- pembuatan menu lelang -->
+      </br>
+      </br>
 <center>
-<div class="card" style="width: 12rem;">
+<div class="card" style="width: 16rem;">
   <img src="{{ asset ('img/bangunan') }}/pasar.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Bangunan Pasar</h5>
-    <p class="card-text"></p>
-    <a href="{{ url('/morebangunan')}}" class="btn btn-primary">More</a>
+    <p class="card-text">Bangunan pasar lama di kota bantul</p>
+    <a href="{{ url('/pasar')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 
-<div class="card" style="width: 12rem;">
-  <img src="{{ asset ('img') }}/kolkas.jpg" class="card-img-top" alt="...">
+<div class="card" style="width: 16rem;">
+  <img src="{{ asset ('img/bangunan') }}/rmh.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Kulkas 1 Pintu</h5>
-    <p class="card-text">murah pol</p>
+    <h5 class="card-title">Rumah Kontrakan</h5>
+    <p class="card-text">Rumah 1 lantai dengan harga terjangkau</p>
     <a href="{{ url('/morebangunan')}}" class="btn btn-primary">More</a>
         </div>
 </div>
-
-<div class="card" style="width: 12rem;">
-  <img src="{{ asset ('img') }}/hardisk.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Hardisk</h5>
-    <p class="card-text">murah pol</p>
-    <a href="{{ url('/morebangunan')}}" class="btn btn-primary">More</a>
-  </div>
-</div>
-
-<div class="card" style="width: 12rem;">
-  <img src="{{ asset ('img') }}/tv.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Iphone 12</h5>
-    <p class="card-text">murah pol</p>
-    <a href="{{ url('/morebangunan')}}" class="btn btn-primary">More</a>
-  </div>
-</div>
-
 </center>
 
  <!-- tampilan footer -->

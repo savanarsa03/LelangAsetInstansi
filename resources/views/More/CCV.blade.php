@@ -119,7 +119,7 @@
   }
 
   .detail-lelang-image {
-    width: 400px;
+    width: 200px;
     height: 200px;
     margin-right: 20px;
   }
@@ -179,8 +179,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
  <!-- Navbar -->
-
-
  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -212,7 +210,7 @@
     </span>
 
   </div>
-            </nav>
+  </nav>
 
     <div class="jumbotron jumbotron-fluid text-white" style="background-color: #488482;">
         <div class="container">
@@ -226,27 +224,27 @@
             </div>
         </div>
     </div>
-    
-   <!-- breadcrumb -->
-<nav aria-label="breadcrumb" style="font-size: 14px;">
+      <!-- breadcrumb -->
+<nav aria-label="breadcrumb" style="font-size: 12px;">
   <ol class="breadcrumb bg-transparent" >
     <li class="breadcrumb-item"><a href="-">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Kategori</li>
-    <li class="breadcrumb-item active" aria-current="page">Bangunan</li>
+    <li class="breadcrumb-item active" aria-current="page">elektronik</li>
   </ol>
 </nav>
-
+ 
 <div class="detail-lelang">
   <div class="detail-lelang-image">
-    <img src="{{ asset ('img/bangunan') }}/bru.jpg" alt="Gambar Lelang">
+    <img src="{{ asset ('img') }}/cctv.jpeg" alt="Gambar Lelang">
   </div>
   <div class="detail-lelang-info">
-    <h2>Kontrakan</h2>
-    <div class="lelang-status">Status: Sedang Berlangsung</div>
-    <p>Kontrakan ini memiliki LT 90m / LB 47m , berisi 3 Kamar Tidur, 2 KM luar, Terdapat Carport, Lokasi rumah sangat strategis</p>
-    <p>Tanggal Lelang: 30 Juli 2023</p>
-    <p>Open Bid: Rp 1.000.000</p>
-    <p class="lelang-schedule">Jadwal Pelaksanaan: 30 Juli 2023, pukul 09:00 - 12:00</p>
+    <h2>CCTV</h2>
+    <div class="lelang-status">Status: Akan berlangsung</div>
+    <p>Penggunaan CCTV milik kantor pemakaian 2x tidak ada cacat</p>
+    <p>Tanggal Lelang: 27 Juli </p>
+    <p>Lokasi:Kantor Diskominfo Yogyakarta</p>
+    <p>Open Bid: Rp 500.000</p>
+    <p class="lelang-schedule">Jadwal Pelaksanaan: 27 Juli 2023, pukul 13.00 - 14.00 WIB</p>
     <a href="{{ url('/konfirmel')}}" class="bid-button">Ikuti Lelang</a>
   </div>
   <a href="https://wa.me/1234567890?text=Halo%2C%20saya%20tertarik%20dengan%20lelang%20ini." target="_blank" class="whatsapp-link">

@@ -105,6 +105,7 @@
   </div>
   </nav>
 
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -120,10 +121,19 @@
   </div>
 </div>
 
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb" style="font-size: 14px;">
+  <ol class="breadcrumb bg-transparent" >
+    <li class="breadcrumb-item"><a href="-">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+    <li class="breadcrumb-item active" aria-current="page">bangunan</li>
+  </ol>
+</nav>
+
 <center>   
 <!-- pembuatan menu lelang -->
       </br>
-
+      </br>
 <div class="card" style="width: 12rem;">
   <img src="{{ asset ('img/bangunan') }}/lelang.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -133,7 +143,7 @@
 <div class="card" style="width: 12rem;">
   <img src="{{ asset ('img/bangunan') }}/sewa.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <a href="{{ url('/Lelang')}}" class="btn btn-primary">Lelang</a>
+    <a href="{{ url('/Lelang')}}" class="btn btn-primary">Sewa</a>
   </div>
 </div>
 

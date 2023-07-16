@@ -28,7 +28,7 @@
                 <h2 class="card-title">Data Peserta</h2>
                 <h2 class="card-text"></h2>
                 <p class="card-text">Last updated 3 mins ago</p>
-                <a href="/dashboard/materi" class="btn btn-secondary">Selengkapnya &raquo;</a>
+                <a href="/dashboard/peserta" class="btn btn-secondary">Selengkapnya &raquo;</a>
             </div>
         </div>
     </div>

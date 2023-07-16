@@ -11,8 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tambah_lelang', function (Blueprint $table) {
+        Schema::create('pesertas', function (Blueprint $table) {
             $table->id();
+            $table->string('inputnama4');
+            $table->string('inputNIK');
+            $table->string('inputEmail4');
+            $table->string('nomor-hp','15');
+            $table->string('inputAddress');
+            $table->string('jenis-rekening');
+            $table->string('nomor-rekening');
             $table->timestamps();
         });
     }
@@ -22,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tambah_lelang');
+        Schema::dropIfExists('pesertas');
     }
 };

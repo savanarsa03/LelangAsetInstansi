@@ -164,6 +164,7 @@
       <tr>
         <th>No.</th>
         <th>Nama</th>
+        <th>Tanggal</th>
         <th>Harga Penawaran</th>
       </tr>
     </thead>
@@ -173,9 +174,9 @@
 <script>
     // Simpan informasi penawar dalam array
     let penawar = [
-      { nama: "John Doe", hargaPenawaran: 500 },
-      { nama: "Jane Smith", hargaPenawaran: 600 },
-      { nama: "Michael Johnson", hargaPenawaran: 700 }
+      { tanggal: "19 Juni 2023",nama:  "XXXXX", hargaPenawaran: 500000 },
+      { tanggal: "19 Juni 2023",nama:  "XXXXX", hargaPenawaran: 600000 },
+      { tanggal: "19 Juni 2023",nama:  "XXXXX", hargaPenawaran: 700000 }
     ];
 
     function tampilkanDaftarPenawar() {
@@ -195,6 +196,10 @@
         const namaCell = document.createElement("td");
         namaCell.textContent = penawar.nama;
         row.appendChild(namaCell);
+
+        const tanggalCell = document.createElement("td");
+        tanggalCell.textContent = penawar.tanggal;
+        row.appendChild(tanggalCell);
 
         const hargaCell = document.createElement("td");
         hargaCell.textContent = penawar.hargaPenawaran;

@@ -119,6 +119,15 @@
 
   </div>
         </nav>
+
+        <!-- breadcrumb -->
+<nav aria-label="breadcrumb" style="font-size: 14px;">
+  <ol class="breadcrumb bg-transparent" >
+    <li class="breadcrumb-item"><a href="-">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Panduan</li>
+  </ol>
+</nav>
+
       </br>
       <p><b>PANDUAN E-LELANG  DAN E-SEWA</b></p>
   <!-- <center><h2>PANDUAN E-LELANG DAN E-SEWA</h2> -->
@@ -136,6 +145,7 @@
               </div>
             </div>
           </div>
+          <iframe class="embed-responsive-item" src="https://lelangaset.jogjakota.go.id/public/upload/tutorial.mp4"></iframe>
 </div>
 
 

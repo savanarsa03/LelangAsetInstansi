@@ -125,19 +125,11 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ url('/kendaraan')}}">Kendaraan</a>
           <a class="dropdown-item" href="{{ url('/elektronik')}}">Elektronik</a>
-              <div class="dropdown dropright">
-                <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdownMenuLink" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                Bangunan
-                </a>
-                <div class="dropdown-menu" aria-labelledby="nestedDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ url('/sewabangunan')}}">Sewa</a>
-                  <a class="dropdown-item" href="{{ url('/bangunan')}}">Lelang</a>
-                </div>
-              </div>
+          <a class="dropdown-item" href="{{ url('/bangunan')}}">Bangunan</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">Panduan</a>
+        <a class="nav-link active" href="{{ url('/panduan')}}">Panduan</a>
       </li>
     </ul>
     
@@ -148,6 +140,8 @@
             </form>
     </span>
 
+  </div>
+  
   </div>
   </nav>
 
@@ -164,13 +158,22 @@
         </div>
     </div>
     
+    <!-- breadcrumb -->
+<nav aria-label="breadcrumb" style="font-size: 14px;">
+  <ol class="breadcrumb bg-transparent" >
+    <li class="breadcrumb-item"><a href="-">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+    <li class="breadcrumb-item active" aria-current="page">Elektronik</li>
+  </ol>
+</nav>
+
 <!-- pembuatan menu lelang -->
 <center>
 <div class="card" style="width: 12rem;">
   <img src="{{ asset ('img') }}/lptp.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Laptop</h5>
-    <p class="card-text">murah pol</p>
+    <p class="card-text">Spesifikasi tinggi</p>
     <a href="{{ url('/moreelektronik')}}" class="btn btn-primary">More</a>
   </div>
 </div>
@@ -179,8 +182,8 @@
   <img src="{{ asset ('img') }}/cctv.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">CCTV </h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <p class="card-text">CCTV Serbaguna milik BUMN</p>
+    <a href="{{ url('/CCV')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 
@@ -189,7 +192,7 @@
   <div class="card-body">
     <h5 class="card-title">Iphone 12</h5>
     <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <a href="{{ url('/moreelektronik')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 
@@ -197,8 +200,8 @@
   <img src="{{ asset ('img') }}/kolkas.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Kulkas 1 Pintu</h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <p class="card-text">Kulkas milik kantor</p>
+    <a href="{{ url('/moreelektronik')}}" class="btn btn-primary">More</a>
         </div>
 </div>
 
@@ -206,17 +209,17 @@
   <img src="{{ asset ('img') }}/hardisk.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Hardisk</h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <p class="card-text">Hardisk Negara</p>
+    <a href="{{ url('/moreelektronik')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 
 <div class="card" style="width: 12rem;">
   <img src="{{ asset ('img') }}/tv.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Iphone 12</h5>
-    <p class="card-text">murah pol</p>
-    <a href="#" class="btn btn-primary">More</a>
+    <h5 class="card-title">TV</h5>
+    <p class="card-text">TV full screen</p>
+    <a href="{{ url('/moreelektronik')}}" class="btn btn-primary">More</a>
   </div>
 </div>
 

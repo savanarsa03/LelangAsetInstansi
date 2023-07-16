@@ -5,7 +5,7 @@
         <h1 class="h2">Edit </h1>
     </div>
     <div class="col-lg-8">
-        <form method="post" action="/dashboard/Lelang/{{ $post->slug }}" class="mb-5" enctype="multipart/form-data">
+        <form method="post" action="/dashboard/materi/{{ $post->slug }}" class="mb-5" enctype="multipart/form-data">
             @method('put')
             @csrf
             <div class="mb-3">

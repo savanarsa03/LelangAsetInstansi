@@ -115,22 +115,16 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ url('/kendaraan')}}">Kendaraan</a>
           <a class="dropdown-item" href="{{ url('/elektronik')}}">Elektronik</a>
-              <div class="dropdown dropright">
-                <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdownMenuLink" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-                Bangunan
-                </a>
-                <div class="dropdown-menu" aria-labelledby="nestedDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ url('/sewabangunan')}}">Sewa</a>
-                  <a class="dropdown-item" href="{{ url('/bangunan')}}">Lelang</a>
-                </div>
-              </div>
+          <a class="dropdown-item" href="{{ url('/bangunan')}}">Bangunan</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">Panduan</a>
+        <a class="nav-link active" href="{{ url('/panduan')}}">Panduan</a>
       </li>
     </ul>
+
   </div>
+  
 </nav>
 
 <!-- breadcrumb -->
@@ -151,7 +145,6 @@
   <thead>
     <tr>
       <th>Tanggal</th>
-      <th>Penawar</th>
       <th>Gambar</th>
       <th>Harga Penawaran</th>
       <th>Status</th>
@@ -166,9 +159,9 @@
 <script>
   // Data riwayat lelang (contoh)
   const riwayatLelang = [
-    { tanggal: "2022-01-01", penawar: "John Doe", gambar: "{{ asset ('img/kendaraan') }}/elf.jpeg", hargaPenawaran: 500, status: "Menang", keterangan: "Pemenang lelang" },
-    { tanggal: "2022-01-02", penawar: "Jane Smith", gambar: "{{ asset ('img') }}/cctv.jpeg", hargaPenawaran: 600, status: "Kalah", keterangan: "Penawaran lebih rendah" },
-    { tanggal: "2022-01-03", penawar: "Michael Johnson", gambar: "{{ asset ('img/bangunan') }}/bru.jpg", hargaPenawaran: 700, status: "Kalah", keterangan: "Pemenang lelang" }
+    { tanggal: "2022-01-01",  gambar: "{{ asset ('img/kendaraan') }}/elf.jpeg", hargaPenawaran: 500, status: "Menang", keterangan: "Pemenang lelang" },
+    { tanggal: "2022-01-02",  gambar: "{{ asset ('img') }}/cctv.jpeg", hargaPenawaran: 600, status: "Kalah", keterangan: "Penawaran lebih rendah" },
+    { tanggal: "2022-01-03",  gambar: "{{ asset ('img/bangunan') }}/bru.jpg", hargaPenawaran: 700, status: "Kalah", keterangan: "Pemenang lelang" }
   ];
 
   // Fungsi untuk membuat tabel riwayat lelang
@@ -184,9 +177,6 @@
 
       const tanggal = document.createElement("td");
       tanggal.textContent = riwayat.tanggal;
-
-      const penawar = document.createElement("td");
-      penawar.textContent = riwayat.penawar;
 
       const gambar = document.createElement("td");
       const img = document.createElement("img");
@@ -204,7 +194,6 @@
       keterangan.textContent = riwayat.keterangan;
 
       baris.appendChild(tanggal);
-      baris.appendChild(penawar);
       baris.appendChild(gambar);
       baris.appendChild(hargaPenawaran);
       baris.appendChild(status);

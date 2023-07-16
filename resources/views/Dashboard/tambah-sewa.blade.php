@@ -46,7 +46,7 @@
                 <trix-editor input="deskripsi"></trix-editor>
             </div> -->
             <div class="mb-3">
-                <label for="formFile" class="form-label">Gambar Bus</label>
+                <label for="formFile" class="form-label">Gambar</label>
                 <img class="img-preview img-fluid mb-3 col-sm-5">
                 <input class="form-control @error('image') is-invalid @enderror" type="file" id="image"
                     name="image" onchange="previewImage()">

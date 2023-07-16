@@ -2,7 +2,7 @@
 
 @section('container')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Tambah Lelang</h1>
+        <h1 class="h2">Tambah Sewa</h1>
     </div>
 
     
@@ -14,7 +14,7 @@
     @endif
 
     <div class="table-responsive col-lg-12">
-        <a href="/dashboard/tambah-lelang/create" class="btn btn-success mb-4">Tambah Lelang</a>
+        <a href="/dashboard/tambah-sewa/create" class="btn btn-success mb-4">Tambah Sewa</a>
         <table class="table table-striped table-sm">
             <thead>
                 <tr>
@@ -22,29 +22,27 @@
                     <th scope="col">Nama Barang</th>
                     <th scope="col">Deskripsi</th>
                     <th scope="col">Alamat</th>
-                    <th scope="col">Kategori</th>
                     <th scope="col">Image</th>
                     <th scope="col">Aksi</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($lelang as $lel)
+                @foreach ($dashsewa as $sew)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ $lel->nama_barang }}</td>
-                        <td>{!! $lel->deskripsi !!}</td>
-                        <td>{!! $lel->alamat!!}</td>
-                        <td>{!! $lel->kategori !!}</td>
-                        <td>{!! $lel->image !!}
+                        <td>{{ $sew->nama_barang}}</td>
+                        <td>{!! $sew->deskripsi !!}</td>
+                        <td>{!! $sew->alamat !!}</td>
+                        <td>{!! $sew->image !!}
                             
                         </td>
 
                         <td>
-                            <a href="/dashboard/Lelang/{{ $lel->slug }}" class="badge bg-info"><span
+                            <a href="/dashboard/sewa/{{ $sew->slug }}" class="badge bg-info"><span
                                     data-feather="eye"></span></a>
-                            <a href="/dashboard/Lelang/{{ $lel->slug }}/edit" class="badge bg-warning"><span
+                            <a href="/dashboard/sewa/{{ $sew->slug }}/edit" class="badge bg-warning"><span
                                     data-feather="edit"></span></a>
-                            <form action="/dashboard/Lelang/{{ $lel->slug }}" method="post" class="d-inline">
+                            <form action="/dashboard/sewa/{{ $sew->slug }}" method="post" class="d-inline">
                                 @method('delete')
                                 @csrf
                                 <button class="badge bg-danger border-0"
